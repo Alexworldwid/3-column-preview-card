@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+body {
+   font-size: 1.5em;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: var(--Very-light-gray-background-headings-buttons);
+}
+main {
+    width: 80%;
+    height: auto;
+}
+section {
+    height: 370px;
+}
+.sedan {
+    padding: 40px;
+    background-color: var(--Bright-orange);
+    margin-top: 25px;
+    border-radius: 10px 10px 0 0;
+}
+.suvs {
+    padding: 40px;
+    background-color: var(--Dark-cyan);
+}
+.luxury {
+    padding: 40px;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+img {
+    width: 45px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 1.9rem;
+    margin: 10px 0;
+    line-height: 20px;
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+p {
+    font-size: 1rem;
+    margin: 20px 0;
+    line-height: 1.4rem;
+    color: var(--Transparent-white-paragraphs);
+}
+button {
+    padding: 13px;
+    width: 130px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 2rem;
+}
+.sedan button {
+    color: var(--Bright-orange);
+}
+.suvs button {
+    color: var(--Dark-cyan);
+}
+.luxury button {
+    color: var(--Very-dark-cyan);
+}
+button:hover {
+    background-color: transparent;
+    border: 1px solid var(--Very-light-gray-background-headings-buttons);
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+footer p {
+    color: black;
+}
+@media only screen and (min-width: 720px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section {
+        height: 400px;
+        width: 330px;
+    }
+    .sedan {
+        padding: 30px;
+        background-color: var(--Bright-orange);
+        margin-top: 0;
+        border-radius: 10px 0 0 10px;
+    }
+    .suvs {
+        padding: 30px;
+        background-color: var(--Dark-cyan);
+    }
+    .luxury {
+        padding: 30px;
+        background-color: var(--Very-dark-cyan);
+        border-radius: 0  10px 10px 0;
+    }
+}
